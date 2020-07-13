@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+            <LinearLayout
+                android:id="@+id/toppp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/set">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/latitude"
+                        app:layout_constraintBottom_toTopOf="@id/latitude_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="@id/toppp"
+                        android:fontFamily="@font/maven_pro"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:padding="10dp"/>
+
+
+                    <EditText
+                        android:id="@+id/latitude_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/latitude"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:fontFamily="@font/maven_pro"
+                        android:padding="10dp"
+                        android:inputType="numberDecimal"/>
+
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/longitude_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+        </LinearLayout>
+            </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/set"
+            android:layout_width="79dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="SET"
+            android:fontFamily="@font/maven_pro"/>
+
+        <TextView
+            android:id="@+id/setPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/spinner"
+            app:layout_constraintTop_toBottomOf="@id/set"
+            android:fontFamily="@font/maven_pro"
+            android:layout_marginTop="10dp"
+            android:text="Set refreshing period:"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/setPeriod"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
