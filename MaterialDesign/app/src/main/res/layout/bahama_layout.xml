@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:elevation="4dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:contextClickable="true"
+            app:navigationIcon="@drawable/baseline_close_white_18dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Material Design"
+            app:menu="@menu/contextual_action_bar"
+            style="@style/Widget.App.ActionMode"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bahama" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline2"
+        android:text="Bahamas"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:gravity="bottom"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bahamaString"
+        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body1"
+        android:padding="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+</LinearLayout>

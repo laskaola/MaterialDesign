@@ -1,0 +1,144 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <item name="background">@color/background</item>
+
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MyApp.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MyApp.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.LargeComponent</item>
+
+        <item name="textInputStyle">@style/Widget.MyApp.TextInputLayout</item>
+
+
+    </style>
+
+    <style name="BaseAppTheme" parent="android:Theme.Material">
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/shared_element</item>
+        <item name="android:windowExitTransition">@transition/shared_element</item>
+
+        <!-- specify shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/shared_element</item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/shared_element</item>
+    </style>
+
+    <style name="Widget.App.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">?attr/textAppearanceHeadline6</item>
+        <item name="subtitleTextStyle">?attr/textAppearanceSubtitle1</item>
+        <item name="background">@color/material_grey_900</item>
+    </style>
+
+    <style name="Widget.MyApp.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/secondaryColor</item>
+        <item name="strokeColor">@color/primaryDarkColor</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxBackgroundColor">@color/primaryTextColor</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MyApp.SmallComponent</item>
+        <item name="hintTextColor">?attr/colorOnSurface</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MdcTypographyStyles.Overline</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MdcTypographyStyles.Overline</item>
+    </style>
+
+    <style name="Widget.MyApp.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabSelectedTextColor">@color/primaryDarkColor</item>
+    </style>
+
+
+    <style name="ShapeAppearance.MyApp.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+
+        <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+            <item name="fontFamily">@font/viga</item>
+            <item name="android:fontFamily">@font/viga</item>
+            <item name="android:textSize">88sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+            <item name="fontFamily">@font/viga</item>
+            <item name="android:fontFamily">@font/viga</item>
+            <item name="android:textSize">55sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+            <item name="fontFamily">@font/viga</item>
+            <item name="android:fontFamily">@font/viga</item>
+            <item name="android:textSize">44sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+            <item name="fontFamily">@font/viga</item>
+            <item name="android:fontFamily">@font/viga</item>
+            <item name="android:textSize">31sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+            <item name="fontFamily">@font/viga</item>
+            <item name="android:fontFamily">@font/viga</item>
+            <item name="android:textSize">22sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+            <item name="fontFamily">@font/viga</item>
+            <item name="android:fontFamily">@font/viga</item>
+            <item name="android:textSize">18sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+            <item name="fontFamily">@font/viga</item>
+            <item name="android:fontFamily">@font/viga</item>
+            <item name="android:textSize">15sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+            <item name="fontFamily">@font/viga</item>
+            <item name="android:fontFamily">@font/viga</item>
+            <item name="android:textSize">13sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Body1" parent="TextAppearance.MaterialComponents.Body1">
+            <item name="fontFamily">@font/roboto</item>
+            <item name="android:fontFamily">@font/roboto</item>
+            <item name="android:textSize">16sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Body2" parent="TextAppearance.MaterialComponents.Body2">
+            <item name="fontFamily">@font/roboto</item>
+            <item name="android:fontFamily">@font/roboto</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Button" parent="TextAppearance.MaterialComponents.Button">
+            <item name="fontFamily">@font/roboto</item>
+            <item name="android:fontFamily">@font/roboto</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Caption" parent="TextAppearance.MaterialComponents.Caption">
+            <item name="fontFamily">@font/roboto</item>
+            <item name="android:fontFamily">@font/roboto</item>
+            <item name="android:textSize">12sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Overline" parent="TextAppearance.MaterialComponents.Overline">
+            <item name="fontFamily">@font/roboto</item>
+            <item name="android:fontFamily">@font/roboto</item>
+            <item name="android:textSize">10sp</item>
+        </style>
+
+
+</resources>

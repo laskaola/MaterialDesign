@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/aMain"
+        android:transitionName="shared_element">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:elevation="4dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/app_name"
+            app:menu="@menu/top_app_bar"
+            style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/scene"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="5">
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/viewPager"
+        app:layout_constraintBottom_toBottomOf="@id/viewPager"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/round_add_white_18dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/viewPager"
+            app:layout_constraintBottom_toTopOf="@id/floating_action_button"
+            android:layout_margin="16dp"
+            app:fabSize="mini"
+            android:visibility="gone"
+            app:srcCompat="@drawable/round_add_white_18dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/viewPager"
+            app:layout_constraintBottom_toTopOf="@id/floating_action_button1"
+            android:layout_margin="16dp"
+            app:fabSize="mini"
+            android:visibility="gone"
+            app:srcCompat="@drawable/round_add_white_18dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:icon="@drawable/round_home_black_18dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:icon="@drawable/round_face_black_18dp" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+    </View>
+
+</LinearLayout>
